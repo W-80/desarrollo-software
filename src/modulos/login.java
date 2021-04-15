@@ -53,6 +53,7 @@ public class login extends javax.swing.JFrame {
         jLabel_mensajes = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel_LOGO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_LOGO.setText("logo");

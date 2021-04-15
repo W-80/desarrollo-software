@@ -76,6 +76,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         jButton_atras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_TITULO.setText("GESTION DE USUARIOS");
@@ -116,6 +117,11 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         });
 
         jButton_uodate.setText("Actualizar Usuario");
+        jButton_uodate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_uodateActionPerformed(evt);
+            }
+        });
 
         jButton_atras.setText("Atras");
         jButton_atras.addActionListener(new java.awt.event.ActionListener() {
@@ -181,17 +187,17 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(47, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(50, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(24, 24, 24)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
@@ -229,6 +235,15 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         delusr.setModalityType (ModalityType.APPLICATION_MODAL);
         delusr.setVisible(true);
     }//GEN-LAST:event_jButton_deleteActionPerformed
+
+    private void jButton_uodateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_uodateActionPerformed
+        actualizar_usuario upusr;
+        upusr = new actualizar_usuario(this,true);
+        upusr.setModal (true);
+        upusr.setAlwaysOnTop (true);
+        upusr.setModalityType (ModalityType.APPLICATION_MODAL);
+        upusr.setVisible(true);
+    }//GEN-LAST:event_jButton_uodateActionPerformed
 
     /**
      * @param args the command line arguments
