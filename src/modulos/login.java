@@ -7,6 +7,7 @@ package modulos;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import usuario_operador.operador;
 
 /**
  *
@@ -158,8 +159,13 @@ public class login extends javax.swing.JFrame {
 
     private void jButton_ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ingresarActionPerformed
         if (this.jTextField_login.getText().equals("1")){
-            gestion_de_usuarios admin = new gestion_de_usuarios();
+            menu_admin admin = new menu_admin();
             admin.setVisible(true);
+            this.dispose();
+        }
+        if (this.jTextField_login.getText().equals("2")){
+            operador usr = new operador();
+            usr.setVisible(true);
             this.dispose();
         }
         else{
