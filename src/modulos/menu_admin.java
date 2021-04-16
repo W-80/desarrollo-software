@@ -8,6 +8,8 @@ package modulos;
 import admin_gestion_usuario.gestion_de_usuarios;
 import admin_gestion_sedes.gestion_de_sedes;
 import java.awt.Dialog.ModalityType;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -21,8 +23,25 @@ public class menu_admin extends javax.swing.JFrame {
     public menu_admin() {
         initComponents();
         this.setLocationRelativeTo(null);
+        imagenes();
     }
 
+    public void imagenes(){
+        ImageIcon imagenusuarios = new ImageIcon("src/imagenes/empleado.png");
+        Image usr = imagenusuarios.getImage();
+        Image imgusr = usr.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_usuario = new ImageIcon(imgusr);
+        this.jLabel_GESTION_USUARIOS.setIcon(imagen_usuario);
+        this.jLabel_GESTION_USUARIOS.setText("");
+        
+        ImageIcon imagensedes = new ImageIcon("src/imagenes/sedes.png");
+        Image sede = imagensedes.getImage();
+        Image imgsede = sede.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_sede = new ImageIcon(imgsede);
+        this.jLabel_GESTION_SEDES.setIcon(imagen_sede);
+        this.jLabel_GESTION_SEDES.setText("");
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -81,13 +100,13 @@ public class menu_admin extends javax.swing.JFrame {
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel_GESTION_USUARIOS, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_GESTION_USUARIOS, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_GESTION_USUARIOS))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jButton_GESTION_SEDES)
-                    .addComponent(jLabel_GESTION_SEDES))
-                .addGap(36, 36, 36))
+                    .addComponent(jLabel_GESTION_SEDES, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -112,23 +131,23 @@ public class menu_admin extends javax.swing.JFrame {
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_GESTION_USUARIOS)
                     .addComponent(jButton_GESTION_SEDES))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
-                .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();

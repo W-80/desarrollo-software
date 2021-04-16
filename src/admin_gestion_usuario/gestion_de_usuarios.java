@@ -38,6 +38,13 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         this.jLabel_add.setIcon(imagen_add);
         this.jLabel_add.setText("");
         
+        ImageIcon imagenlogo = new ImageIcon("src/imagenes/empleado.png");
+        Image logo = imagenlogo.getImage();
+        Image imglogo = logo.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_logo = new ImageIcon(imglogo);
+        this.jLabel_logo.setIcon(imagen_logo);
+        this.jLabel_logo.setText("");
+        
         ImageIcon imagenactualizar = new ImageIcon("src/imagenes/actualizar.png");
         Image imagenupdate = imagenactualizar.getImage();
         Image imgupdate = imagenupdate.getScaledInstance(80,80, Image.SCALE_SMOOTH);
@@ -80,6 +87,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
         jButton_delete = new javax.swing.JButton();
         jButton_uodate = new javax.swing.JButton();
         jButton_atras = new javax.swing.JButton();
+        jLabel_logo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -136,6 +144,9 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
             }
         });
 
+        jLabel_logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_logo.setText("logo");
+
         javax.swing.GroupLayout jPanel_CONTENIDOLayout = new javax.swing.GroupLayout(jPanel_CONTENIDO);
         jPanel_CONTENIDO.setLayout(jPanel_CONTENIDOLayout);
         jPanel_CONTENIDOLayout.setHorizontalGroup(
@@ -143,7 +154,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_add)
                     .addComponent(jButton_uodate)
                     .addComponent(jLabel_actualizar))
@@ -161,13 +172,17 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton_atras)
+                .addGap(96, 96, 96)
+                .addComponent(jLabel_logo, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_CONTENIDOLayout.setVerticalGroup(
             jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton_atras)
+                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton_atras)
+                    .addComponent(jLabel_logo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel_TITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -178,7 +193,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_add)
                     .addComponent(jButton_search))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_borrar)
                     .addComponent(jLabel_actualizar))
@@ -186,7 +201,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_uodate)
                     .addComponent(jButton_delete))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -203,7 +218,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
 
         pack();
@@ -297,6 +312,7 @@ public final class gestion_de_usuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_add;
     private javax.swing.JLabel jLabel_borrar;
     private javax.swing.JLabel jLabel_buscar;
+    private javax.swing.JLabel jLabel_logo;
     private javax.swing.JPanel jPanel_CONTENIDO;
     // End of variables declaration//GEN-END:variables
 }
