@@ -47,26 +47,30 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jLabel_password" max="32767" attributes="0"/>
-                      <Component id="jLabel_login" min="-2" pref="63" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextField_password" pref="98" max="32767" attributes="0"/>
-                      <Component id="jTextField_login" max="32767" attributes="0"/>
-                      <Component id="jButton_ingresar" alignment="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="154" max="32767" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel_LOGO" max="32767" attributes="0"/>
-                      <Component id="jLabel_TITULO" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jLabel_mensajes" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel_password" pref="86" max="32767" attributes="0"/>
+                              <Component id="jLabel_login" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTextField_password" pref="98" max="32767" attributes="0"/>
+                              <Component id="jTextField_login" max="32767" attributes="0"/>
+                              <Component id="jButton_ingresar" alignment="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="148" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel_LOGO" max="32767" attributes="0"/>
+                              <Component id="jLabel_TITULO" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel_mensajes" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -91,8 +95,8 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButton_ingresar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jLabel_mensajes" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <Component id="jLabel_mensajes" pref="29" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -113,13 +117,13 @@
         <Component class="javax.swing.JLabel" name="jLabel_login">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="Login:"/>
+            <Property name="text" type="java.lang.String" value="Usuario:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_password">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="Password:"/>
+            <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField_login">
@@ -141,7 +145,6 @@
         <Component class="javax.swing.JLabel" name="jLabel_mensajes">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Mensajes:"/>
           </Properties>
         </Component>
       </SubComponents>

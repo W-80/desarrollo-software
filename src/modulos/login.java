@@ -63,10 +63,10 @@ public class login extends javax.swing.JFrame {
         jLabel_TITULO.setText("PKG Tracker");
 
         jLabel_login.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel_login.setText("Login:");
+        jLabel_login.setText("Usuario:");
 
         jLabel_password.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel_password.setText("Password:");
+        jLabel_password.setText("Contraseña:");
 
         jTextField_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,29 +87,30 @@ public class login extends javax.swing.JFrame {
         });
 
         jLabel_mensajes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_mensajes.setText("Mensajes:");
 
         javax.swing.GroupLayout jPanel_CONTENIDOLayout = new javax.swing.GroupLayout(jPanel_CONTENIDO);
         jPanel_CONTENIDO.setLayout(jPanel_CONTENIDOLayout);
         jPanel_CONTENIDOLayout.setHorizontalGroup(
             jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel_password, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel_login, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField_password, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                    .addComponent(jTextField_login)
-                    .addComponent(jButton_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(154, Short.MAX_VALUE))
-            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_LOGO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel_mensajes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel_password, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
+                            .addComponent(jLabel_login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField_password, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                            .addComponent(jTextField_login)
+                            .addComponent(jButton_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(0, 148, Short.MAX_VALUE))
+                    .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel_LOGO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel_mensajes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel_CONTENIDOLayout.setVerticalGroup(
@@ -129,8 +130,8 @@ public class login extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton_ingresar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel_mensajes)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(jLabel_mensajes, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -170,7 +171,7 @@ public class login extends javax.swing.JFrame {
         }
         else{
             this.jTextField_login.setText("");
-            this.jLabel_mensajes.setText("ID o contraseña incorrectos");
+            this.jLabel_mensajes.setText(" pista: usuario de admin es 1 y de empleado es 2");
         }
     }//GEN-LAST:event_jButton_ingresarActionPerformed
 

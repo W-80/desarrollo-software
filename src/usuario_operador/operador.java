@@ -59,7 +59,7 @@ public class operador extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_TITULO.setText("GESTION DE USUARIOS");
+        jLabel_TITULO.setText("CONDUCTOR - PICKUP");
 
         jLabel_add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_add.setText("ADD");

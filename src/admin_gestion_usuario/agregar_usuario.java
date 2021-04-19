@@ -37,15 +37,15 @@ public class agregar_usuario extends javax.swing.JDialog {
         jTextField_ID = new javax.swing.JTextField();
         jTextField_sueldo = new javax.swing.JTextField();
         jTextField_direccion = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox_cargis = new javax.swing.JComboBox<>();
+        jLabel_mensaje = new javax.swing.JLabel();
+        jComboBox_cargos = new javax.swing.JComboBox<>();
         jLabel_nombre = new javax.swing.JLabel();
         jLabel_id = new javax.swing.JLabel();
         jLabel_direccion = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_celular = new javax.swing.JLabel();
         jTextField_telefono = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel_sueldo = new javax.swing.JLabel();
+        jLabel_cargo = new javax.swing.JLabel();
         jButton_atras = new javax.swing.JButton();
         jButton_registrar = new javax.swing.JButton();
 
@@ -69,13 +69,13 @@ public class agregar_usuario extends javax.swing.JDialog {
 
         jTextField_sueldo.setToolTipText("");
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("MENSAJE");
+        jLabel_mensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_mensaje.setText("MENSAJE");
 
-        jComboBox_cargis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox_cargis.addActionListener(new java.awt.event.ActionListener() {
+        jComboBox_cargos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox_cargos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox_cargisActionPerformed(evt);
+                jComboBox_cargosActionPerformed(evt);
             }
         });
 
@@ -88,14 +88,14 @@ public class agregar_usuario extends javax.swing.JDialog {
         jLabel_direccion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel_direccion.setText("Direccion:");
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("Celular:");
+        jLabel_celular.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel_celular.setText("Celular:");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Sueldo:");
+        jLabel_sueldo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel_sueldo.setText("Sueldo:");
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setText("Cargo:");
+        jLabel_cargo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel_cargo.setText("Cargo:");
 
         jButton_atras.setText("Atras");
         jButton_atras.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +105,11 @@ public class agregar_usuario extends javax.swing.JDialog {
         });
 
         jButton_registrar.setText("Registrar");
+        jButton_registrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_registrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel_CONTENIDOLayout = new javax.swing.GroupLayout(jPanel_CONTENIDO);
         jPanel_CONTENIDO.setLayout(jPanel_CONTENIDOLayout);
@@ -114,20 +119,20 @@ public class agregar_usuario extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel_mensaje, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_sueldo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_celular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel_direccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel_id, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel_cargo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jComboBox_cargis, 0, 148, Short.MAX_VALUE)
+                    .addComponent(jComboBox_cargos, 0, 148, Short.MAX_VALUE)
                     .addComponent(jTextField_telefono)
                     .addComponent(jTextField_sueldo)
                     .addComponent(jTextField_NOMBRE)
@@ -160,22 +165,22 @@ public class agregar_usuario extends javax.swing.JDialog {
                     .addComponent(jTextField_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(jLabel_celular)
                     .addComponent(jTextField_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLabel_sueldo)
                     .addComponent(jTextField_sueldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox_cargis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(jComboBox_cargos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_cargo))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton_registrar)
                     .addComponent(jButton_atras))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabel_mensaje)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -207,13 +212,17 @@ public class agregar_usuario extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_IDActionPerformed
 
-    private void jComboBox_cargisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_cargisActionPerformed
+    private void jComboBox_cargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_cargosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox_cargisActionPerformed
+    }//GEN-LAST:event_jComboBox_cargosActionPerformed
 
     private void jButton_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_atrasActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_atrasActionPerformed
+
+    private void jButton_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_registrarActionPerformed
+        this.jLabel_mensaje.setText("REGISTRADO CON EXITO");
+    }//GEN-LAST:event_jButton_registrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,15 +270,15 @@ public class agregar_usuario extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_atras;
     private javax.swing.JButton jButton_registrar;
-    private javax.swing.JComboBox<String> jComboBox_cargis;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JComboBox<String> jComboBox_cargos;
     private javax.swing.JLabel jLabel_TITULO;
+    private javax.swing.JLabel jLabel_cargo;
+    private javax.swing.JLabel jLabel_celular;
     private javax.swing.JLabel jLabel_direccion;
     private javax.swing.JLabel jLabel_id;
+    private javax.swing.JLabel jLabel_mensaje;
     private javax.swing.JLabel jLabel_nombre;
+    private javax.swing.JLabel jLabel_sueldo;
     private javax.swing.JPanel jPanel_CONTENIDO;
     private javax.swing.JTextField jTextField_ID;
     private javax.swing.JTextField jTextField_NOMBRE;
