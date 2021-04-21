@@ -61,6 +61,7 @@ public class menu_admin extends javax.swing.JFrame {
         jButton_atras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_TITULO.setText("Menu");
