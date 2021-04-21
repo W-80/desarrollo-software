@@ -76,37 +76,27 @@ public class gestion_de_sedes extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel_CONTENIDO = new javax.swing.JPanel();
-        jLabel_TITULO = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel_add = new javax.swing.JLabel();
-        jLabel_buscar = new javax.swing.JLabel();
-        jLabel_borrar = new javax.swing.JLabel();
-        jLabel_actualizar = new javax.swing.JLabel();
         jButton_add = new javax.swing.JButton();
         jButton_search = new javax.swing.JButton();
-        jButton_delete = new javax.swing.JButton();
+        jLabel_buscar = new javax.swing.JLabel();
         jButton_uodate = new javax.swing.JButton();
-        jButton_atras = new javax.swing.JButton();
+        jLabel_actualizar = new javax.swing.JLabel();
+        jLabel_borrar = new javax.swing.JLabel();
+        jButton_delete = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel_TITULO = new javax.swing.JLabel();
         jLabel_logo = new javax.swing.JLabel();
+        jButton_atras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-
-        jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_TITULO.setText("GESTION DE SEDES");
 
         jLabel_add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_add.setText("ADD");
         jLabel_add.setMaximumSize(new java.awt.Dimension(16, 16));
         jLabel_add.setMinimumSize(new java.awt.Dimension(16, 16));
-
-        jLabel_buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_buscar.setText("SEARCH");
-
-        jLabel_borrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_borrar.setText("DELETE");
-
-        jLabel_actualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_actualizar.setText("UPDATE");
 
         jButton_add.setText("Agregar Sede");
         jButton_add.addActionListener(new java.awt.event.ActionListener() {
@@ -122,12 +112,8 @@ public class gestion_de_sedes extends javax.swing.JFrame {
             }
         });
 
-        jButton_delete.setText("Borrar Sede");
-        jButton_delete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_deleteActionPerformed(evt);
-            }
-        });
+        jLabel_buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_buscar.setText("SEARCH");
 
         jButton_uodate.setText("Actualizar Sede");
         jButton_uodate.addActionListener(new java.awt.event.ActionListener() {
@@ -136,6 +122,105 @@ public class gestion_de_sedes extends javax.swing.JFrame {
             }
         });
 
+        jLabel_actualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_actualizar.setText("UPDATE");
+
+        jLabel_borrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_borrar.setText("DELETE");
+
+        jButton_delete.setText("Borrar Sede");
+        jButton_delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_deleteActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_add)
+                    .addComponent(jButton_uodate)
+                    .addComponent(jLabel_actualizar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jButton_search)
+                    .addComponent(jLabel_buscar)
+                    .addComponent(jButton_delete)
+                    .addComponent(jLabel_borrar))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_buscar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton_add)
+                    .addComponent(jButton_search))
+                .addGap(18, 61, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_borrar)
+                    .addComponent(jLabel_actualizar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton_uodate)
+                    .addComponent(jButton_delete))
+                .addContainerGap())
+        );
+
+        jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_TITULO.setText("Gestion de Sedes");
+
+        jLabel_logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_logo.setText("logo");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel_TITULO, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+            .addComponent(jLabel_logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel_logo, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_TITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel_CONTENIDOLayout = new javax.swing.GroupLayout(jPanel_CONTENIDO);
+        jPanel_CONTENIDO.setLayout(jPanel_CONTENIDOLayout);
+        jPanel_CONTENIDOLayout.setHorizontalGroup(
+            jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CONTENIDOLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        jPanel_CONTENIDOLayout.setVerticalGroup(
+            jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
         jButton_atras.setText("Atras");
         jButton_atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,81 +228,28 @@ public class gestion_de_sedes extends javax.swing.JFrame {
             }
         });
 
-        jLabel_logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_logo.setText("logo");
-
-        javax.swing.GroupLayout jPanel_CONTENIDOLayout = new javax.swing.GroupLayout(jPanel_CONTENIDO);
-        jPanel_CONTENIDO.setLayout(jPanel_CONTENIDOLayout);
-        jPanel_CONTENIDOLayout.setHorizontalGroup(
-            jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_add)
-                    .addComponent(jButton_uodate)
-                    .addComponent(jLabel_actualizar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton_search)
-                    .addComponent(jLabel_buscar)
-                    .addComponent(jButton_delete)
-                    .addComponent(jLabel_borrar))
-                .addGap(36, 36, 36))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton_atras)
-                .addGap(74, 74, 74)
-                .addComponent(jLabel_logo, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel_CONTENIDOLayout.setVerticalGroup(
-            jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_atras)
-                    .addComponent(jLabel_logo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel_TITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_buscar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_add)
-                    .addComponent(jButton_search))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_borrar)
-                    .addComponent(jLabel_actualizar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_uodate)
-                    .addComponent(jButton_delete))
-                .addContainerGap(67, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(60, Short.MAX_VALUE)
-                .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton_atras))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(80, Short.MAX_VALUE)
+                        .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap()
+                .addComponent(jButton_atras)
+                .addGap(5, 5, 5)
                 .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(185, Short.MAX_VALUE))
+                .addContainerGap(218, Short.MAX_VALUE))
         );
 
         pack();
@@ -312,6 +344,8 @@ public class gestion_de_sedes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_borrar;
     private javax.swing.JLabel jLabel_buscar;
     private javax.swing.JLabel jLabel_logo;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel_CONTENIDO;
     // End of variables declaration//GEN-END:variables
 }
