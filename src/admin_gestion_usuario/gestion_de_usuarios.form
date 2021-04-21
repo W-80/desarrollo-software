@@ -27,15 +27,10 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jButton_atras" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jPanel_CONTENIDO" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="jButton_atras" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanel_CONTENIDO" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -238,7 +233,7 @@
         <Component class="javax.swing.JLabel" name="jLabel_logo">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="logo"/>
+            <Property name="text" type="java.lang.String" value="logito"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_TITULO">
