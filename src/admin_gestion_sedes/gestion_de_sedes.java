@@ -154,6 +154,9 @@ public class gestion_de_sedes extends javax.swing.JFrame {
                     .addComponent(jLabel_borrar))
                 .addContainerGap())
         );
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton_add, jButton_delete, jButton_search, jButton_uodate});
+
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -238,9 +241,9 @@ public class gestion_de_sedes extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jButton_atras))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(80, Short.MAX_VALUE)
+                        .addContainerGap(79, Short.MAX_VALUE)
                         .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
