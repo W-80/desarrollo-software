@@ -32,6 +32,27 @@ public class operador extends javax.swing.JFrame {
         ImageIcon imagen_logo = new ImageIcon(imglogo);
         this.jLabel_logo.setIcon(imagen_logo);
         this.jLabel_logo.setText("");
+        
+        ImageIcon imagenpickup = new ImageIcon("src/imagenes/pickup.png");
+        Image pickup = imagenpickup.getImage();
+        Image imgpickup = pickup.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_pickup = new ImageIcon(imgpickup);
+        this.jLabel_pickuo.setIcon(imagen_pickup);
+        this.jLabel_pickuo.setText("");
+
+        ImageIcon imagencobrar = new ImageIcon("src/imagenes/cobrar.png");
+        Image imagecobro = imagencobrar.getImage();
+        Image imgcobro = imagecobro.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_cobrar = new ImageIcon(imgcobro);
+        this.jLabel_cobrar.setIcon(imagen_cobrar);
+        this.jLabel_cobrar.setText("");
+        
+        ImageIcon imagenrastreo = new ImageIcon("src/imagenes/rastreo.png");
+        Image imagenrast = imagenrastreo.getImage();
+        Image imgrast = imagenrast.getScaledInstance(80,80, Image.SCALE_SMOOTH);
+        ImageIcon imagen_rastreo = new ImageIcon(imgrast);
+        this.jLabel_rastreo.setIcon(imagen_rastreo);
+        this.jLabel_rastreo.setText("");
     }
 
     /**
@@ -45,61 +66,50 @@ public class operador extends javax.swing.JFrame {
 
         jPanel_CONTENIDO = new javax.swing.JPanel();
         jLabel_TITULO = new javax.swing.JLabel();
-        jLabel_add = new javax.swing.JLabel();
-        jLabel_buscar = new javax.swing.JLabel();
-        jLabel_borrar = new javax.swing.JLabel();
-        jLabel_actualizar = new javax.swing.JLabel();
-        jButton_add = new javax.swing.JButton();
-        jButton_search = new javax.swing.JButton();
-        jButton_delete = new javax.swing.JButton();
-        jButton_uodate = new javax.swing.JButton();
+        jLabel_pickuo = new javax.swing.JLabel();
+        jLabel_cobrar = new javax.swing.JLabel();
+        jLabel_rastreo = new javax.swing.JLabel();
+        jButton_PICKUP = new javax.swing.JButton();
+        jButton_cobrar = new javax.swing.JButton();
+        jButton_rastreo = new javax.swing.JButton();
         jButton_atras = new javax.swing.JButton();
         jLabel_logo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel_TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_TITULO.setText("CONDUCTOR - PICKUP");
+        jLabel_TITULO.setText("OPERADOR");
 
-        jLabel_add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_add.setText("ADD");
-        jLabel_add.setMaximumSize(new java.awt.Dimension(16, 16));
-        jLabel_add.setMinimumSize(new java.awt.Dimension(16, 16));
+        jLabel_pickuo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_pickuo.setText("Programar pickup");
+        jLabel_pickuo.setMaximumSize(new java.awt.Dimension(16, 16));
+        jLabel_pickuo.setMinimumSize(new java.awt.Dimension(16, 16));
 
-        jLabel_buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_buscar.setText("SEARCH");
+        jLabel_cobrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_cobrar.setText("realizar cobro");
 
-        jLabel_borrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_borrar.setText("DELETE");
+        jLabel_rastreo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_rastreo.setText("Rastrear paquete");
 
-        jLabel_actualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_actualizar.setText("UPDATE");
-
-        jButton_add.setText("Agregar Usuario");
-        jButton_add.addActionListener(new java.awt.event.ActionListener() {
+        jButton_PICKUP.setText("Programar Pickup");
+        jButton_PICKUP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_addActionPerformed(evt);
+                jButton_PICKUPActionPerformed(evt);
             }
         });
 
-        jButton_search.setText("Consultar Usuarios");
-        jButton_search.addActionListener(new java.awt.event.ActionListener() {
+        jButton_cobrar.setText("Pagar recibo");
+        jButton_cobrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_searchActionPerformed(evt);
+                jButton_cobrarActionPerformed(evt);
             }
         });
 
-        jButton_delete.setText("Borrar Usuario");
-        jButton_delete.addActionListener(new java.awt.event.ActionListener() {
+        jButton_rastreo.setText("Rastrear Paquete");
+        jButton_rastreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_deleteActionPerformed(evt);
-            }
-        });
-
-        jButton_uodate.setText("Actualizar Usuario");
-        jButton_uodate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_uodateActionPerformed(evt);
+                jButton_rastreoActionPerformed(evt);
             }
         });
 
@@ -120,27 +130,27 @@ public class operador extends javax.swing.JFrame {
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_add)
-                    .addComponent(jButton_uodate)
-                    .addComponent(jLabel_actualizar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                    .addComponent(jLabel_pickuo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_PICKUP))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton_search)
-                    .addComponent(jLabel_buscar)
-                    .addComponent(jButton_delete)
-                    .addComponent(jLabel_borrar))
+                    .addComponent(jButton_cobrar)
+                    .addComponent(jLabel_cobrar))
                 .addGap(36, 36, 36))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CONTENIDOLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jButton_rastreo)
+                    .addComponent(jLabel_rastreo))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel_CONTENIDOLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton_atras)
-                .addGap(47, 47, 47)
-                .addComponent(jLabel_logo, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel_TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_logo, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel_CONTENIDOLayout.setVerticalGroup(
             jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,21 +163,16 @@ public class operador extends javax.swing.JFrame {
                 .addComponent(jLabel_TITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_buscar))
+                    .addComponent(jLabel_pickuo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_cobrar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_add)
-                    .addComponent(jButton_search))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_borrar)
-                    .addComponent(jLabel_actualizar))
+                    .addComponent(jButton_PICKUP)
+                    .addComponent(jButton_cobrar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addComponent(jLabel_rastreo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CONTENIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_uodate)
-                    .addComponent(jButton_delete))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addComponent(jButton_rastreo))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -175,36 +180,41 @@ public class operador extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jPanel_CONTENIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_addActionPerformed
-        
-    }//GEN-LAST:event_jButton_addActionPerformed
+    private void jButton_PICKUPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PICKUPActionPerformed
+        programar_pickup op_pickup;
+        op_pickup = new programar_pickup(this,true);
+        op_pickup.setAlwaysOnTop (true);
+        op_pickup.setVisible(true);      
+    }//GEN-LAST:event_jButton_PICKUPActionPerformed
 
-    private void jButton_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_searchActionPerformed
-       
-    }//GEN-LAST:event_jButton_searchActionPerformed
+    private void jButton_cobrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cobrarActionPerformed
+        dialogo_de_pago dialopago;
+        dialopago = new dialogo_de_pago(this,true);
+        dialopago.setAlwaysOnTop (true);
+        dialopago.setVisible(true);
+    }//GEN-LAST:event_jButton_cobrarActionPerformed
 
-    private void jButton_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_deleteActionPerformed
-        
-    }//GEN-LAST:event_jButton_deleteActionPerformed
-
-    private void jButton_uodateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_uodateActionPerformed
-        
-    }//GEN-LAST:event_jButton_uodateActionPerformed
+    private void jButton_rastreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_rastreoActionPerformed
+        rastrear_paquete tracking;
+        tracking = new rastrear_paquete(this,true);
+        tracking.setAlwaysOnTop(true);
+        tracking.setVisible(true);
+    }//GEN-LAST:event_jButton_rastreoActionPerformed
 
     private void jButton_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_atrasActionPerformed
         login log = new login();
@@ -248,17 +258,15 @@ public class operador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_add;
+    private javax.swing.JButton jButton_PICKUP;
     private javax.swing.JButton jButton_atras;
-    private javax.swing.JButton jButton_delete;
-    private javax.swing.JButton jButton_search;
-    private javax.swing.JButton jButton_uodate;
+    private javax.swing.JButton jButton_cobrar;
+    private javax.swing.JButton jButton_rastreo;
     private javax.swing.JLabel jLabel_TITULO;
-    private javax.swing.JLabel jLabel_actualizar;
-    private javax.swing.JLabel jLabel_add;
-    private javax.swing.JLabel jLabel_borrar;
-    private javax.swing.JLabel jLabel_buscar;
+    private javax.swing.JLabel jLabel_cobrar;
     private javax.swing.JLabel jLabel_logo;
+    private javax.swing.JLabel jLabel_pickuo;
+    private javax.swing.JLabel jLabel_rastreo;
     private javax.swing.JPanel jPanel_CONTENIDO;
     // End of variables declaration//GEN-END:variables
 }
